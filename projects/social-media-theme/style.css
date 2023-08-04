@@ -6,7 +6,7 @@
     --color-white: hsl(252, 30%, 100%);
     --color-light: hsl(252, 30%, 95%);
     --color-gray: hsl(252, 15%, 65%);
-    --color-primary: hsl(252, 78%, 60%);
+    --color-primary: hsl(201, 69%, 45%);
     --color-success: hsl(120, 95%, 65%);
     --color-danger: hsl(0, 95%, 65%);
     --color-warning: hsl(45, 95%, 65%);
@@ -18,8 +18,8 @@
     --search-padding: 0.6rem 1rem;
     --card-padding: 1rem;
 
-    --sticky-to-left: 5.4rem;
-    --sticky-to-right: -18rem;
+    --sticky-top-left: 5.4rem;
+    --sticky-top-right: -18rem;
 }
 
 
@@ -121,7 +121,7 @@ nav .search-bar input::placeholder {
  nav .create {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     gap: 2rem;
  }
 /* ======================NAV END====================== */
@@ -134,7 +134,7 @@ main {
 }
 main .container {
     display: grid;
-    grid-template-columns: 18vh auto 20vh;
+    grid-template-columns: 26vh auto 20vw;
     column-gap: 2rem;
     position: relative;
 }
@@ -143,7 +143,7 @@ main .container {
 main .container .left {
     height: max-content;
     position: sticky;
-    top: var(--sticky-to-left)
+    top: var(--sticky-top-left);
 }
 
 main .container .left .profile {
@@ -153,7 +153,7 @@ main .container .left .profile {
     display: flex;
     align-items: center;
     column-gap: 1rem;
-    width: 100%
+    width: 100%;
 }
 
 /* ---------------------Main Sidebar --------------------- */
@@ -245,6 +245,7 @@ main .container .left .profile {
     padding: var(--card-padding);
     box-shadow: 0 0 2rem hsl(var(--color-primary), 75% ,60% 25%) ;
     z-index: 8;
+    /* display: block; */
     display: none;
 }
 .left .notifications-popup::before{
