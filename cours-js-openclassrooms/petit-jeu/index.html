@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1>AzerType</h1>
+    </header>
+
+    <main>
+        <div id="divJeu">
+            <h2>Le jeu</h2>
+            <p>Un petit texte</p>
+        </div>
+        <div id="divAutre">
+            <h2>Une autre div</h2>
+            <p>Un autre texte</p>
+        </div>
+
+        <div class="container">
+            <h2>My Container </h2>
+            <div class="zoneChoix">
+                <input type="radio" name="optionSource" id="mots" value="1" checked>
+                <label for="mots">Mots</label>
+                <input type="radio" name="optionSource" id="phrases" value="2">
+                <label for="phrases">Phrases</label>
+            </div>
+            <div class="zoneProposition">
+                Entrez le mot : <span>Cachalot</span>
+            </div>
+        
+        </div>
+
+        <div class="image">
+            <h2>Images </h2>
+            <img id="premiereImage" src="image.jpg" alt="Ceci est une image de test" class="photo flexCenter">
+            <div class="listeMots centree actif photo"></div>
+        </div>
+    </main>
+
+    <aside>
+       
+        <button class="bouton1"> Bouton 1 </button>
+        <button class="bouton2"> Bouton 2 </button>
+        <h2>Les scores</h2>
+        <p>Un petit texte</p>
+    </aside>
+
+    <!-- Rajouter une line grace à la balise hr -->
+
+    <div class="end">
+
+    </div>
+
+    <footer>
+        @Copyright : OpenClassrooms.
+    </footer>
+
+    <script src="./script.js" defer></script>
+</body>
+</html>
